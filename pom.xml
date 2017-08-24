@@ -71,7 +71,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.38</version>
+            <version>5.1.26</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -102,31 +102,31 @@
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
             <version>2.5.0-cdh5.3.3</version>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
             <version>2.5.0-cdh5.3.3</version>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
             <version>2.5.0-cdh5.3.3</version>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-core</artifactId>
             <version>2.5.0</version>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
-        <dependency>
-            <groupId>lucene</groupId>
-            <artifactId>lucene</artifactId>
-            <version>1.4.3</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>lucene</groupId>-->
+            <!--<artifactId>lucene</artifactId>-->
+            <!--<version>1.4.3</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm</artifactId>
@@ -163,5 +163,17 @@
             <artifactId>presto-jdbc</artifactId>
             <version>0.180</version>
         </dependency>
-</dependencies>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>1.7.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.10</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+    </dependencies>
 </project>
