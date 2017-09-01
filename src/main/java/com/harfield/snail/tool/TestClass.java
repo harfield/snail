@@ -8,6 +8,10 @@ public class TestClass {
         new TestClass();
         Class clazz= TestInner.class;
         Object o = clazz.newInstance();
+        System.out.println("abc\r\rabc".replaceAll("\r",""));
+        System.out.println("abc.abc".substring("abc.abc".indexOf(".")));
+        System.out.println("abc_abc".split("\\s|_")[0]);
+        System.out.println(Integer.parseInt("1.2"));
     }
     static class TestInner{
         static {
