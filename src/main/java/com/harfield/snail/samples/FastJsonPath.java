@@ -3,7 +3,9 @@ package com.harfield.snail.samples;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONPath;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -16,7 +18,10 @@ public class FastJsonPath {
         object.put("c",new HashMap<String,String>());
         System.out.println(JSONPath.eval(object,"$.*"));
         System.out.println(JSONObject.toJSONString(new JavaBean()));
-
+        System.out.println(JSONObject.toJSONString("abc"));
+        List<String> list = new ArrayList<String>();
+        list.add("a");
+        System.out.println(list.toString());
 
     }
 
